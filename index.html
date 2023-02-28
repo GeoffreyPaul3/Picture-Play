@@ -51,19 +51,15 @@
           <h2 class="header__sub-title">
             find your favorite movie with <span class="purple">picture play</span>
           </h2>
-          <div class="input-wrapper">
-            <input
-              class="input-data"
-              type="text"
-              placeholder="Search by Title, Category or Keyword"
-            />
-            <button id="search-button" type="submit" class="btn ">
-                <i class="fas fa-search "></i>
-                <div class="btn__overlay spinner">
-                    <i class="fas fa-spinner fa-spin d-none"></i>
-                </div>
+          <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search for movies...">
+            <button type="submit" id="search-button" onclick="searchMovies()">
+              <i class="fa fa-search"></i>
+              <i id="spinner" class="fa fa-spinner fa-spin d-none"></i>
             </button>
           </div>
+          <div id="results-container"></div>
+          
           <figure class="landing-page__img--wrapper">
             <img class="landing-page__img" src="./assets/undraw_video_streaming_re_v3qg.svg" alt="Video streaming image">
           </figure>
